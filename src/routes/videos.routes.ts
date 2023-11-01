@@ -13,7 +13,6 @@ videoRoutes.post('/create-video', login, (request,response) => { //Passa o login
    videoRepository.create(request, response)
 })
 
-
 videoRoutes.get('/get-video', (request,response) => {
    videoRepository.getVideos(request, response)
 })
